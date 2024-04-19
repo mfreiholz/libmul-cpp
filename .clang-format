@@ -65,10 +65,9 @@ IndentCaseLabels: true
 #IndentPPDirectives: None
 IndentWidth: 4
 IndentWrappedFunctionNames: false
-KeepEmptyLinesAtTheStartOfBlocks: true
+KeepEmptyLinesAtTheStartOfBlocks: false
 #JavaScriptQuotes: Single
 #JavaScriptWrapImports: false
-KeepEmptyLinesAtTheStartOfBlocks: false
 
 Language: Cpp
 #MacroBlockBegin:

@@ -79,6 +79,11 @@ public:
 		}
 		return std::move(h);
 	}
+#else
+	static ProcessHandle start(const std::string& cmd, bool detach = false)
+	{
+		return {};
+	}
 #endif
 };
 

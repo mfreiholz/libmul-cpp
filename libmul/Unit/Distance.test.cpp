@@ -1,11 +1,11 @@
 #include <iostream>
 #include <libmul/Unit/Distance.hpp>
+#include <limits>
 
 inline bool logically_equal(double a, double b, double error_factor = 1.0)
 {
 	return a == b ||
-		std::abs(a - b) < std::abs(std::min(a, b)) * std::numeric_limits<double>::epsilon() *
-		error_factor;
+		std::abs(a - b) < std::abs(std::min(a, b)) * std::numeric_limits<double>::epsilon() * error_factor;
 }
 
 int main(int argc, char** argv)
